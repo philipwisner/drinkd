@@ -15,7 +15,7 @@ export class OrdersComponent implements OnInit {
     "Cappuccino",
     "Latte",
     "Espresso",
-    "Machiato",
+    "Macchiato",
     "Mocha",
     "Hot Chocolate",
     "Tea"
@@ -34,6 +34,7 @@ export class OrdersComponent implements OnInit {
   onSubmit() {
     this.ordersService.form.value.coffeeOrder = this.coffeeOrder;
     let data = this.ordersService.form.value;
+    console.log('data inside onSubmit is', data);
 
     this.ordersService.createCoffeeOrder(data)
       .then(res => {

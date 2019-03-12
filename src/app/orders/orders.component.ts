@@ -37,6 +37,7 @@ export class OrdersComponent implements OnInit {
 
     this.ordersService.createCoffeeOrder(data)
       .then(res => {
+        console.log('res is after submit', res);
         /*do something here....
         maybe clear the form or give a success message*/
       });

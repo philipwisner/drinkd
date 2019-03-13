@@ -16,6 +16,10 @@ export class OrdersService {
     completed: new FormControl(false)
   })
 
+  getCoffeeOrders() {
+    return this.firestore.collection("coffeeOrders").snapshotChanges();
+  }
+
   createCoffeeOrder(data) {
     return new Promise<any>((resolve, reject) => {
       this.firestore

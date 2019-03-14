@@ -30,4 +30,11 @@ export class OrdersService {
         }, err => reject(err));
     });
   }
+
+  updateCoffeeOrder(data) {
+    return this.firestore
+      .collection("coffeeOrders")
+      .doc(data.payload.doc.id)
+      .set({ completed: true }, { merge: true });
+  }
 }

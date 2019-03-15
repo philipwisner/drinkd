@@ -1,6 +1,16 @@
 <form [formGroup]="this.ordersService.form">
-  <input placeholder="Order Number" formControlName="orderNumber" type="text" class="input-field col s12">
-  <input placeholder="Customer Name" formControlName="customerName" type="text" class="input-field col s12">
+  <div class="field">
+    <label class="label">Order Number</label>
+    <div class="control">
+      <input placeholder="Order Number" formControlName="orderNumber" type="text" class="input">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">Customer Name</label>
+    <div class="control">
+      <input placeholder="Customer Name" formControlName="customerName" type="text" class="input">
+    </div>
+  </div>
   <button class="waves-effect waves-light btn col s4" *ngFor="let coffee of coffees" (click)="addCoffee(coffee)">
     {{coffee}}
   </button>

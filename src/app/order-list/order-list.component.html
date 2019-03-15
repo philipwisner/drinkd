@@ -8,10 +8,10 @@
       </span>
     </td>
     <td [hidden]="order.payload.doc.data().completed" (click)="markCompleted(order)">
-      <i class="material-icons">check</i>
+      <i class="fas fa-check"></i>
     </td>
     <td [hidden]="order.payload.doc.data().completed" (click)="deleteOrder(order)">
-      <i class="material-icons">delete_forever</i>
+      <i class="fas fa-trash"></i>
     </td>
   </tr>
 </tbody>

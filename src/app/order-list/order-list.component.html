@@ -3,10 +3,10 @@
 <div class="order-list">
   <div *ngFor="let order of coffeeOrders" class="order-container card">
     <div class="card-content">
-      <div class="order-number">{{ order.payload.doc.data().orderNumber }}</div>
-      <div class="order-name">{{ order.payload.doc.data().customerName }}</div>
+      <div class="order-number"><i class="fas fa-hashtag"></i> {{ order.payload.doc.data().orderNumber }}</div>
+      <div class="order-name"><i class="fas fa-user"></i> {{ order.payload.doc.data().customerName }}</div>
       <div *ngFor="let coffee of order.payload.doc.data().coffeeOrder" class="drinks">
-        <span class="drink-name">{{ coffee }}</span>
+        <i class="fas fa-coffee"></i> <span class="drink-name"> {{ coffee }}</span>
       </div>
     </div>
     <footer class="card-footer">

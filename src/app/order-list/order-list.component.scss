@@ -15,6 +15,32 @@ h2 {
 .card {
   margin: 10px 0;
   border-radius: 3px;
+  .card-content {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    i {
+      font-size: .8em;
+      color: #9B9B9B;
+      margin-right: 5px;
+    }
+    .order-number {
+      // border: 1px solid red;
+      flex: .1 0 auto;
+    }
+    .order-name {
+      // border: 1px solid green;
+      flex: .4 0 auto;
+    }
+    .drinks {
+      // border: 1px solid blue;
+      flex: .4 0 auto;
+    }
+  }
 }
 
 .card-footer-item {

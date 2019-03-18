@@ -15,4 +15,28 @@
 
 .card {
   margin: 8px 0;
+  border-radius: 3px;
+}
+
+.card-footer-item {
+  color: white;
+  font-weight: 600;
+  padding: 8px;
+  i {
+    margin-left: 10px;
+  }
+  &.complete {
+    background-color: #2ecc71;
+    border-radius: 0 0 0 3px;
+    &:hover {
+      background-color: #27ae60;
+    }
+  }
+  &.remove {
+    background-color: #e74c3c;
+    border-radius: 0 0 3px 0;
+    &:hover {
+      background-color: #c0392b;
+    }
+  }
 }

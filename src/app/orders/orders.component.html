@@ -1,26 +1,28 @@
 <form [formGroup]="this.ordersService.form">
-  <div class="field">
+  <!-- <div class="field">
     <label class="label">Order Number</label>
     <div class="control">
       <input placeholder="Order Number" formControlName="orderNumber" type="text" class="input">
     </div>
-  </div>
+  </div> -->
   <div class="field">
     <label class="label">Customer Name</label>
     <div class="control">
       <input placeholder="Customer Name" formControlName="customerName" type="text" class="input">
     </div>
   </div>
-  <button class="waves-effect waves-light btn col s4" *ngFor="let coffee of coffees" (click)="addCoffee(coffee)">
-    {{coffee}}
-  </button>
+  <div class="buttons">
+    <button class="button" *ngFor="let coffee of coffees" (click)="addCoffee(coffee)">
+      {{coffee}}
+    </button>
+  </div>
   <ul class="collection">
     <li *ngFor="let coffee of coffeeOrder">
       <span class="col s11"> {{ coffee }} </span>
       <a class="col s1" (click)="removeCoffee(coffee)">x</a>
     </li>
   </ul>
-  <button class="button is-primary is-rounded" (click)="onSubmit()">
+  <button class="button is-medium is-fullwidth is-primary" (click)="onSubmit()">
     Submit
   </button>
 </form>

@@ -7,12 +7,14 @@
       <div *ngFor="let coffee of order.payload.doc.data.coffeeOrder" class="drinks">
         <span class="drink-name">{{ coffee }}</span>
       </div>
-      <div [hidden]="order.payload.doc.data().completed" (click)="markCompleted(order)">
-        <i class="fas fa-check"></i>
-      </div>
-      <div [hidden]="order.payload.doc.data().completed" (click)="deleteOrder(order)">
-        <i class="fas fa-trash"></i>
-      </div>
     </div>
+    <footer class="card-footer">
+      <div [hidden]="order.payload.doc.data().completed" (click)="markCompleted(order)" class="card-footer-item complete">
+        Complete <i class="fas fa-check"></i>
+      </div>
+      <div [hidden]="order.payload.doc.data().completed" (click)="deleteOrder(order)" class="card-footer-item remove">
+        Delete <i class="fas fa-trash"></i>
+      </div>
+    </footer>
   </div>
 </div>

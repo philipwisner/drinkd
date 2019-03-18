@@ -14,11 +14,11 @@ import { OrderListComponent } from './order-list/order-list.component';
 
 //SERVICES
 import { OrdersService } from "./shared/orders.service";
-
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
-  declarations: [AppComponent, OrdersComponent, OrderListComponent],
+  declarations: [AppComponent, OrdersComponent, OrderListComponent, NavbarComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

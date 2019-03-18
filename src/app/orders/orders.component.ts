@@ -23,6 +23,10 @@ export class OrdersComponent implements OnInit {
   coffeeOrder = [];
   orderNumber = 1;
 
+  //need to check order number on reload and get most recent order number
+  //reset order number after each day
+  //
+
   ngOnInit() {}
 
   addCoffee = coffee => this.coffeeOrder.push(coffee);

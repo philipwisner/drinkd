@@ -4,7 +4,7 @@
     <div class="card-content">
       <div class="order-number">{{ order.payload.doc.data().orderNumber }}</div>
       <div class="order-name">{{ order.payload.doc.data().customerName }}</div>
-      <div *ngFor="let coffee of order.payload.doc.data.coffeeOrder" class="drinks">
+      <div *ngFor="let coffee of order.payload.doc.data().coffeeOrder" class="drinks">
         <span class="drink-name">{{ coffee }}</span>
       </div>
     </div>

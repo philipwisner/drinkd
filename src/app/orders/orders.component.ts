@@ -21,6 +21,7 @@ export class OrdersComponent implements OnInit {
     "Tea"
   ];
   coffeeOrder = [];
+  orderNumber = 1;
 
   ngOnInit() {}
 
@@ -33,8 +34,10 @@ export class OrdersComponent implements OnInit {
 
   onSubmit() {
     this.ordersService.form.value.coffeeOrder = this.coffeeOrder;
+    this.ordersService.form.value.orderNumber = this.orderNumber;
     let data = this.ordersService.form.value;
     console.log('data inside onSubmit is', data);
+    this.orderNumber++;
 
     this.ordersService.createCoffeeOrder(data)
       .then(res => {

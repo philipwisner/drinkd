@@ -15,9 +15,11 @@ export class OrderListComponent implements OnInit {
     this.getCoffeeOrders();
   }
 
+  //need to reverse coffee order list so newest is on top
+  //this also needs to update whenever changes are made
   getCoffeeOrders = () => this.ordersService.getCoffeeOrders()
     .subscribe(res => (
-      this.coffeeOrders = res.reverse()
+      this.coffeeOrders = res
     ));
 
   markCompleted = data => this.ordersService.updateCoffeeOrder(data);

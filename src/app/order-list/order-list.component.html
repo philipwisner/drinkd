@@ -1,16 +1,18 @@
-//Drop down on top of list to see completed orders
+<!-- Drop down on top of list to see completed orders -->
 <div class="order-list">
-  <div *ngFor="let order of coffeeOrders" class="order-container">
-    <div class="order-number">{{ order.payload.doc.data().orderNumber }}</div>
-    <div class="order-name">{{ order.payload.doc.data().customerName }}</div>
-    <div *ngFor="let coffee of order.payload.doc.data.coffeeOrder" class="drinks">
-      <span class="drink-name">{{ coffee }}</span>
-    </div>
-    <div [hidden]="order.payload.doc.data().completed" (click)="markCompleted(order)">
-      <i class="fas fa-check"></i>
-    </div>
-    <div [hidden]="order.payload.doc.data().completed" (click)="deleteOrder(order)">
-      <i class="fas fa-trash"></i>
+  <div *ngFor="let order of coffeeOrders" class="order-container card">
+    <div class="card-content">
+      <div class="order-number">{{ order.payload.doc.data().orderNumber }}</div>
+      <div class="order-name">{{ order.payload.doc.data().customerName }}</div>
+      <div *ngFor="let coffee of order.payload.doc.data.coffeeOrder" class="drinks">
+        <span class="drink-name">{{ coffee }}</span>
+      </div>
+      <div [hidden]="order.payload.doc.data().completed" (click)="markCompleted(order)">
+        <i class="fas fa-check"></i>
+      </div>
+      <div [hidden]="order.payload.doc.data().completed" (click)="deleteOrder(order)">
+        <i class="fas fa-trash"></i>
+      </div>
     </div>
   </div>
 </div>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="248px" height="35px" viewBox="0 0 248 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="DRINKD" font-family="Avenir-Heavy, Avenir" font-size="48.7872" font-weight="600" fill="#000000">
+            <tspan x="-3.8057952" y="35">DRINKD</tspan>
+        </text>
+        <g id="coffee-solid" transform="translate(198.000000, 0.000000)" fill="#50E3C2" fill-rule="nonzero">
+            <path d="M15.0030576,27.5 L30.0017472,27.5 C34.1420105,27.5 37.501092,24.140625 37.501092,20 L40.0008736,20 C45.5160168,20 50,15.515625 50,10 C50,4.484375 45.5160168,0 40.0008736,0 L9.37854904,0 C8.33957731,0 7.50371284,0.8359375 7.50371284,1.875 L7.50371284,20 C7.50371284,24.140625 10.8627944,27.5 15.0030576,27.5 Z M40.0008736,5 C42.7584452,5 45.0004368,7.2421875 45.0004368,10 C45.0004368,12.7578125 42.7584452,15 40.0008736,15 L37.501092,15 L37.501092,5 L40.0008736,5 Z M43.7271106,35 L3.7774759,35 C0.0590507698,35 -0.987732774,30 0.965221599,30 L46.531553,30 C48.4845074,30 47.4533475,35 43.7271106,35 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

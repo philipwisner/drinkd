@@ -1,27 +1,27 @@
-# AngularFirebase
+# Drinkd
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
+Drinkd is a demo coffee ordering app optimized for smartphones and tablets.
 
-## Development server
+## Technology
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Drinkd is built with:
+- Angular 7
+- Bulma
+- Firebase
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Clone this repo
+- `npm install`
+- `npm i @angular/cli`
+- `ng serve`
 
-## Build
+## Todo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Finish styling and layout for ordering and list component
+- Filter orders by newest
+- Remove completed or deleted task from view 
+- Option to sort orders by different values
+- Auto generate order number based off previous number (resets every day)
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

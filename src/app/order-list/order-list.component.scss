@@ -39,6 +39,10 @@ h2 {
     .drinks {
       // border: 1px solid blue;
       flex: .4 0 auto;
+      li {
+        display: block;
+        border: 1px solid red;
+      }
     }
   }
 }

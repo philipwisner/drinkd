@@ -5,9 +5,9 @@
     <div class="card-content">
       <div class="order-number"><i class="fas fa-hashtag"></i> {{ order.payload.doc.data().orderNumber }}</div>
       <div class="order-name"><i class="fas fa-user"></i> {{ order.payload.doc.data().customerName }}</div>
-      <div *ngFor="let coffee of order.payload.doc.data().coffeeOrder" class="drinks">
-        <i class="fas fa-coffee"></i> <span class="drink-name"> {{ coffee }}</span>
-      </div>
+      <ul *ngFor="let coffee of order.payload.doc.data().coffeeOrder" class="drinks">
+        <li><i class="fas fa-coffee"></i> <span class="drink-name"> {{ coffee }}</span></li>
+      </ul>
     </div>
     <footer class="card-footer">
       <div [hidden]="order.payload.doc.data().completed" (click)="markCompleted(order)" class="card-footer-item complete">

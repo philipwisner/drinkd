@@ -2,12 +2,18 @@ form {
   display: block;
 }
 
-.order-number {
-  border: 1px solid green;
-  .number-label {
-    border: 1px solid red;
+.top-row {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  .number {
+    flex: 0 0 auto;
+    width: 100px;
+    border: 1px solid blue;
   }
-  .number-value {
-    border: 1px solid red;
+  .name {
+    flex: 1 1 auto;
+    border: 1px solid green;
   }
 }

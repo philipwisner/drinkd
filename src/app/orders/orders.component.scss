@@ -1,3 +1,13 @@
 form {
   display: block;
 }
+
+.order-number {
+  border: 1px solid green;
+  .number-label {
+    border: 1px solid red;
+  }
+  .number-value {
+    border: 1px solid red;
+  }
+}

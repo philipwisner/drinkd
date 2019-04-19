@@ -1,7 +1,7 @@
 <form [formGroup]="this.ordersService.form">
-  <div class="field">
-    <label class="label">Order Number</label>
-    <div class="control" formControlName="orderNumber">
+  <div class="field order-number">
+    <div class="label number-label">Order Number</div>
+    <div class="control number-value" formControlName="orderNumber">
       {{orderNumber}}
     </div>
   </div>

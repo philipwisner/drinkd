@@ -1,16 +1,14 @@
 <form [formGroup]="this.ordersService.form">
-  <div class="top-row">
-    <div class="field number">
-      <label class="label">Order Number</label>
-      <div class="control" formControlName="orderNumber">
-        {{orderNumber}}
-      </div>
-    </div>
-    <div class="field name">
-      <label class="label">Customer Name</label>
-      <div class="control">
-        <input placeholder="Customer Name" formControlName="customerName" type="text" class="input">
-      </div>
+  <div class="field order">
+    <label class="label">Order Number</label>
+    <span class="control" formControlName="orderNumber">
+      {{orderNumber}}
+    </span>
+  </div>
+  <div class="field">
+    <label class="label">Customer Name</label>
+    <div class="control">
+      <input placeholder="Customer Name" formControlName="customerName" type="text" class="input">
     </div>
   </div>
   <div class="buttons">

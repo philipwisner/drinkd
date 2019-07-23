@@ -1,7 +1,7 @@
 <!-- Drop down on top of list to see completed orders -->
 <h2 class="subtitle is-4">Order List</h2>
 <div class="order-list">
-  <div *ngFor="let order of coffeeOrders" class="order-container card">
+  <div *ngFor="let order of coffeeOrders" class="order-container card" [hidden]="order.payload.doc.data().completed">
     <div class="card-content">
       <div class="order-number"><i class="fas fa-hashtag"></i> {{ order.payload.doc.data().orderNumber }}</div>
       <div class="order-name"><i class="fas fa-user"></i> {{ order.payload.doc.data().customerName }}</div>
